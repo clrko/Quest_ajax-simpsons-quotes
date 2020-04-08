@@ -11,9 +11,9 @@ function fetchQuoteJSON() {
   
         // Build a block of HTML
         const simpsonHtml = `
-          <p><strong>${simpsons.quote}</strong></p>
-          <p>${simpsons.character}</p>
-          <img src="${simpsons.image}" />
+          <p><strong>${simpsons[0].quote}</strong></p>
+          <p>${simpsons[0].character}</p>
+          <img src="${simpsons[0].image}" />
         `;
         document.querySelector('#simpsons').innerHTML = simpsonHtml;
       });
