@@ -15,8 +15,11 @@ function fetchQuoteJSON() {
           <p>${simpsons[0].character}</p>
           <img src="${simpsons[0].image}" />
         `;
+
         document.querySelector('#simpsons').innerHTML = simpsonHtml;
       });
   }
-  
-  fetchQuoteJSON();
+
+fetchQuoteJSON()
+document.querySelector('#myBtn').addEventListener('click', fetchQuoteJSON);
+
